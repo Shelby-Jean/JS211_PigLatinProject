@@ -19,8 +19,8 @@ const pigLatin = (word) => {
     } else {
       for(let i = 0; i < input.length; i++) {
         if(vowels.indexOf(input[i]) !== -1) {
-          const beforeVowel = input.splice(0, i)
-          return input.concat(beforeVowel).concat('ay').join().replace(/,/g, '')
+          const beforeVowel = input.splice(0, i);
+          return input.concat(beforeVowel).concat('ay').join().replace(/,/g, '');
         }
       }
     }
